@@ -378,5 +378,5 @@ if __name__ == "__main__":
             epoch = int(sys.argv[1])
             period = sys.argv[2]
             print(inPeriod (period, datetime.fromtimestamp(epoch)))
-    except InvalidFormat, ife:
+    except InvalidFormat as ife:
         print("Invalid time period format: %s" % ife)
